@@ -40,6 +40,7 @@ public class ToCreateALeadTest extends BaseClass {
 		
 		Assert.assertTrue(actualLeadInfo.contains(leadLastName));
 		System.out.println("Pass: The lead has been created");
+		System.out.println("Pass: The lead has been created");
 		
 	}
 
