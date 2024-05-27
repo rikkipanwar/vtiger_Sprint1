@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-13T09:45:02Z" name="Default suite" finished-at="2024-05-13T09:45:54Z" duration-ms="52110">
+  <suite started-at="2024-05-16T16:37:29Z" name="Default suite" finished-at="2024-05-16T16:38:03Z" duration-ms="33937">
     <groups>
     </groups>
-    <test started-at="2024-05-13T09:45:02Z" name="Default test" finished-at="2024-05-13T09:45:54Z" duration-ms="52110">
-      <class name="vtiger.opportunity_module.ToCreateAOpportunityTest">
-        <test-method is-config="true" signature="bs()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:02Z" name="bs" finished-at="2024-05-13T09:45:02Z" duration-ms="21" status="PASS">
+    <test started-at="2024-05-16T16:37:29Z" name="Default test" finished-at="2024-05-16T16:38:03Z" duration-ms="33937">
+      <class name="vtiger.leads_module.ToCreateALeadTest">
+        <test-method is-config="true" signature="bs()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:37:29Z" name="bs" finished-at="2024-05-16T16:37:29Z" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bs -->
-        <test-method is-config="true" signature="bc()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:02Z" name="bc" finished-at="2024-05-13T09:45:06Z" duration-ms="4277" status="PASS">
+        <test-method is-config="true" signature="bc()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:37:30Z" name="bc" finished-at="2024-05-16T16:37:35Z" duration-ms="5019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bc -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:06Z" name="bm" finished-at="2024-05-13T09:45:10Z" duration-ms="4481" status="PASS">
+        <test-method is-config="true" signature="bm()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:37:35Z" name="bm" finished-at="2024-05-16T16:37:41Z" duration-ms="6134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bm -->
-        <test-method signature="createOpportunityAndVerifyOpportunity()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:10Z" name="createOpportunityAndVerifyOpportunity" finished-at="2024-05-13T09:45:50Z" duration-ms="39307" status="PASS">
+        <test-method signature="toCreateALeadAndVerifyTheLeadInformationTest()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:37:41Z" name="toCreateALeadAndVerifyTheLeadInformationTest" finished-at="2024-05-16T16:37:59Z" duration-ms="18755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOpportunityAndVerifyOpportunity -->
-        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:50Z" name="am" finished-at="2024-05-13T09:45:52Z" duration-ms="2068" status="PASS">
+        </test-method> <!-- toCreateALeadAndVerifyTheLeadInformationTest -->
+        <test-method is-config="true" signature="am()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:37:59Z" name="am" finished-at="2024-05-16T16:38:02Z" duration-ms="2839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- am -->
-        <test-method is-config="true" signature="ac()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:52Z" name="ac" finished-at="2024-05-13T09:45:54Z" duration-ms="1929" status="PASS">
+        <test-method is-config="true" signature="ac()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:38:02Z" name="ac" finished-at="2024-05-16T16:38:03Z" duration-ms="517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ac -->
-        <test-method is-config="true" signature="as()[pri:0, instance:vtiger.opportunity_module.ToCreateAOpportunityTest@3f4faf53]" started-at="2024-05-13T09:45:54Z" name="as" finished-at="2024-05-13T09:45:54Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="as()[pri:0, instance:vtiger.leads_module.ToCreateALeadTest@66982506]" started-at="2024-05-16T16:38:04Z" name="as" finished-at="2024-05-16T16:38:04Z" duration-ms="8" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "java.sql.Connection.close()" because "this.connection" is null]]>
@@ -63,7 +63,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- as -->
-      </class> <!-- vtiger.opportunity_module.ToCreateAOpportunityTest -->
+      </class> <!-- vtiger.leads_module.ToCreateALeadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

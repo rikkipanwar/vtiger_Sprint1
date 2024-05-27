@@ -2,7 +2,6 @@ package vtiger.genericUtility;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
@@ -17,8 +16,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
-import com.mysql.cj.jdbc.Driver;
-
 import vtiger.pomRepo.HomePage;
 import vtiger.pomRepo.LoginPage;
 @Listeners(vtiger.genericUtility.ItestListenrsImplementationClass.class)
@@ -32,7 +29,7 @@ public class BaseClass {
 	public static WebDriver sDriver;
 	public Connection connection;
 	
-	@BeforeSuite
+	@BeforeSuite(groups = {"smoke", "regression"})
 	public void bs() throws SQLException {
 		/*Driver dbDriver = new Driver();
 		DriverManager.registerDriver(dbDriver);
@@ -40,7 +37,7 @@ public class BaseClass {
 		System.out.println("Data base connection is achieved");*/
 	}
 	
-	@BeforeClass
+	@BeforeClass(groups = {"smoke", "regression"})
 	public void bc() throws IOException {
 		String browser = fUtils.fetchDataFromPropertyFile("browser");
 		String url = fUtils.fetchDataFromPropertyFile("url");
@@ -62,7 +59,7 @@ public class BaseClass {
 		sDriver = driver;
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke", "regression"})
 	public void bm() throws IOException {
 		String username = fUtils.fetchDataFromPropertyFile("username");
 		String password = fUtils.fetchDataFromPropertyFile("password");
@@ -73,23 +70,23 @@ public class BaseClass {
 	
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups = {"smoke", "regression"})
 	public void am() {
 		HomePage home = new HomePage(driver);
 		home.logoutAction();
 		System.out.println("The user has logged out");
 	}
 	
-	@AfterClass
+	@AfterClass(groups = {"smoke", "regression"})
 	public void ac() {
 		driver.quit();
 		System.out.println("The browser is closed");
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups = {"smoke", "regression"})
 	public void as() throws SQLException {
-		connection.close();
-		System.out.println("The Data base is Closed");
+		/*connection.close();
+		System.out.println("The Data base is Closed");*/
 	}
 
 }

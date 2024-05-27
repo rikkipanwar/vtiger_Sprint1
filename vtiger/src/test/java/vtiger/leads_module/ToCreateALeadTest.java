@@ -16,7 +16,7 @@ import vtiger.pomRepo.LeadsPage;
 @Listeners(vtiger.genericUtility.ItestListenrsImplementationClass.class)
 public class ToCreateALeadTest extends BaseClass {
 	
-	@Test
+	@Test(groups = "smoke")
 	public void toCreateALeadAndVerifyTheLeadInformationTest() throws EncryptedDocumentException, IOException {
 		String leadSalutation = eUtils.fetchStringDataFromExcelSheet(IPathConstant.LEAD_SHEET_NAME, 1, 0);
 		String leadFirstName = eUtils.fetchStringDataFromExcelSheet(IPathConstant.LEAD_SHEET_NAME, 1, 1);
